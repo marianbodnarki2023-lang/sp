@@ -1,0 +1,18 @@
+Program _T33;
+Data Int16 _A11, _B11, _C11, _V11, _X11;
+Begin
+  Get (_A11);
+  Get (_B11);
+
+  For _B11 :> _C11 To _A11 Do {
+      Put (_C11 Mul _C11);
+  }
+
+  0 :> _X11;
+  For _A11 :> _C11 To 1 Do {
+      For _B11 :> _V11 To 1 Do {
+          _X11 + 1 :> _X11;
+      }
+  }
+  Put (_X11);
+End
