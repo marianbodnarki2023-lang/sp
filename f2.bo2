@@ -1,0 +1,34 @@
+Program _T22;
+Data Int16 _A11, _B11, _C11, _M11;
+Begin
+Get (_A11);
+Get (_B11);
+Get (_C11);
+
+If _A11 >> _B11 && _A11 >> _C11 {
+ _A11 :> _M11;
+} Else If _B11 >> _A11 && _B11 >> _C11 {
+ _B11 :> _M11;
+} Else {
+ _C11 :> _M11;
+}
+Put (_M11);
+
+If (_A11 Eg _B11) && (_A11 Eg _C11) && (_B11 Eg _C11_ {
+ Put (1);
+} Else {
+ Put (0);
+}
+
+If !!(_A11 >> 0) Or !!(_B11 >> 0) Or !!(_C11 >> 0) {
+ Put (-1);
+} Else {
+ Put (0);
+}
+
+If _A11 >> (_B11 + _C11) {
+ Put (10);
+} Else {
+ Put (0);
+}
+End
