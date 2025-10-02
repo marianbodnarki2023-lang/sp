@@ -1,0 +1,17 @@
+Program _T11;
+Data Int16 _A11, _B11, _X11, _Y11;
+Begin
+Get (_A11);
+Get (_B11);
+
+Put (_A11 + _B11);
+Put (_A11 - _B11);
+Put (_A11 Mul _B11);
+Put (_A11 Div _B11);
+Put (_A11 Mod _B11);
+(_A11 - _B11) Mul 10 + (_A11 + _B11) Div 10 :> _X11;
+_X11 + _X11 Mod 10 :> _Y11;
+
+Put (_X11);
+Put (_Y11);
+End
